@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>На крыльях Поэзии</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+
+  <div class="back_img"></div>
+
+  <div class="header">
+    <div class="header1">
+      <div><img src="img/logo_nkp1.svg" alt="" class="logo"></div>
+      <div class="right_cont active">
+        <div class="welcome_scr">
+          <p>Сегодня <span id="today_scr"></span><br>Мы собрали уже <span id="books">5</span> произведений</p>
+        </div>
+        <div id="toggle" class="button_container">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+        <div class="overlay" id="overlay">
+          <nav class="overlay-menu">
+            <ul class="">
+              <li><a href="stihi.html">Стихи</a></li>
+              <li><a href="session.html">Мероприятия</a></li>
+              <li><a href="citati.html">Цитаты</a></li>
+              <li><a href="vashi_stihi.html">Ваши стихи</a></li>
+              <li><a href="index.html">Вернуться на главную</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="buttons">
+          <ul>
+            <li><a href="stihi.html">Стихи</a></li>
+            <li><a href="session.html">Мероприятия</a></li>
+            <li><a href="citati.html">Цитаты</a></li>
+            <li><a href="vashi_stihi.html">Ваши стихи</a></li>
+            <li class="hom_bt" onclick="location.href='index.html';"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_container">
+    <div class="cont_col">
+      <div class="zag">
+        <h1 id="author">
+        </h1>
+      </div>
+      <div class="cont_main">
+        <article>
+          <div id="listing-table"></div>
+        </article>
+        <img src="poeti.jpg" alt="" class="poeti_img">
+
+        <div class="pagination">
+          <a href="#" id="button-prev" class="arrow-left"></a>
+          <p>Страница <span id="page"></span></p>
+          <a href="#" id="button-next" class="arrow-right"></a>
+        </div>
+      </div>
+    </div>
+    <div class="cont_box1">
+      <h1>Подборка для вас:</h1>
+      <article>Я помню чудное мгновенье: <br>
+        Передо мной явилась ты,<br>
+        Как мимолетное виденье,<br>
+        Как гений чистой красоты.</article>
+      <p>А.С. Пушкин</p>
+      <div class="razdel"></div>
+      <article>У врат обители святой<br>
+        Стоял просящий подаянья <br>
+        Бедняк иссохший, чуть живой <br>
+        От глада, жажды и страданья.</article>
+      <p>М.Ю. Лермонтов</p>
+      <div class="razdel"></div>
+
+      <article>Ты меня не любишь, не жалеешь,<br>
+        Разве я немного не красив?<br>
+        Не смотря в лицо, от страсти млеешь,<br>
+        Мне на плечи руки опустив.</article>
+      <p>С.А. Есенин</p>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="foot_cont">
+      <div><img src="img/logo_nkp2.svg" alt="" class="foot_logo"></div>
+      <div class="foot_discr">
+        <article>Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения дальнейших
+          направлений развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское
+          обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Повседневная практика
+          показывает, что дальнейшее развитие различных форм деятельности играет важную роль в формировании направлений
+          прогрессивного развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей
+          активности обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного
+          развития.</article>
+      </div>
+      <div class="foot_nav">
+        <ul>
+          <li><a href="index.html">Вернуться на главную</a></li>
+          <li><a href="stihi.html">Стихи</a></li>
+          <li><a href="session.html">Мероприятия</a></li>
+          <li><a href="citati.html">Цитаты</a></li>
+          <li><a href="vashi_stihi.html">Ваши стихи</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot_cop">
+      <article>«На крыльях поэзии» 2022</article>
+    </div>
+  </footer>
+
+  <script type="module" src='script/pagination.js'></script>
+  <script type="module" src='script/script.js'></script>
+</body>
+
+</html>
